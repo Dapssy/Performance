@@ -1,0 +1,9 @@
+config:
+  target: 'http://localhost:3000' # Replace with your API's base URL
+  phases:
+    - duration: 60
+      arrivalRate: 10
+scenarios:
+  - flow:
+      - get:
+          url: "/get_balance?user=testuser"
